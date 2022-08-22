@@ -10,43 +10,43 @@
             <div class="alert alert-success my-2" role="alert">
               <?= session()->getFlashdata('pesan'); ?>
             </div>
+          <?php endif; ?>
         </div>
-      <?php endif; ?>
-      <div class="card-body">
-        <div class="table-responsive">
-          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
 
-              <tr class="text-center row-2 ">
-                <th>No.</th>
-                <th>Hutan Lindung</th>
-                <th>Suaka Alam</th>
-                <th>Hutan produksi terbatas</th>
-                <th>Hutan produksi tetap</th>
-                <th>Hutan Produksi dapat dikonversi</th>
-                <th>Jumlah luas hutan dan perairan</th>
-              </tr>
-
-            </thead>
-
-            <?php foreach ($kehutanan as $h) : ?>
-
-              <tbody>
-                <tr class="text-center row-2">
-                  <th><?= $h['id']; ?></th>
-                  <th><?= $h['hl']; ?> ha</th>
-                  <th><?= $h['sa']; ?> ha</th>
-                  <th><?= $h['hp_terbatas']; ?> ha</th>
-                  <th><?= $h['hp_tetap']; ?> ha</th>
-                  <th><?= $h['hp_konversi']; ?> ha</th>
-                  <th><?= $h['hutan_perairan']; ?> ha</th>
+                <tr class="text-center row-2 ">
+                  <th>No.</th>
+                  <th>Hutan Lindung</th>
+                  <th>Suaka Alam</th>
+                  <th>Hutan produksi terbatas</th>
+                  <th>Hutan produksi tetap</th>
+                  <th>Hutan Produksi dapat dikonversi</th>
+                  <th>Jumlah luas hutan dan perairan</th>
                 </tr>
-              </tbody>
 
-            <?php endforeach; ?>
-          </table>
+              </thead>
+
+              <?php foreach ($kehutanan as $h) : ?>
+
+                <tbody>
+                  <tr class="text-center row-2">
+                    <th><?= $h['id']; ?></th>
+                    <th><?= $h['hl']; ?> ha</th>
+                    <th><?= $h['sa']; ?> ha</th>
+                    <th><?= $h['hp_terbatas']; ?> ha</th>
+                    <th><?= $h['hp_tetap']; ?> ha</th>
+                    <th><?= $h['hp_konversi']; ?> ha</th>
+                    <th><?= $h['hutan_perairan']; ?> ha</th>
+                  </tr>
+                </tbody>
+
+              <?php endforeach; ?>
+            </table>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </div>

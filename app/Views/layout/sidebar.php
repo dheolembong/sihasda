@@ -4,7 +4,7 @@
   <!-- Sidebar - Brand -->
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('/'); ?>">
     <div class="sidebar-brand-icon ">
-      <img class="img-fluid " src=" <?= base_url("si/img/logo.png") ?>" alt="">
+      <img class="img-fluid " src="<?= base_url("si/img/logo.png"); ?>" alt="">
     </div>
     <div class="sidebar-brand-text mx-3">SIHASDA SULUT</div>
   </a>
@@ -47,9 +47,9 @@
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">SDA :</h6>
         <a class="collapse-item" href="<?= base_url('Kehutanan'); ?>">Kehutanan</a>
-        <a class="collapse-item" href="<?= base_url('/sda/ptn'); ?>">Pertanian</a>
-        <a class="collapse-item" href="<?= base_url('/sda/ptkn'); ?>">Peternakan</a>
-        <a class="collapse-item" href="<?= base_url('/sda/kltn'); ?>">Kelautan</a>
+        <a class="collapse-item" href="<?= base_url('pertanian'); ?>">Pertanian</a>
+        <a class="collapse-item" href="<?= base_url('peternakan'); ?>">Peternakan</a>
+
         <a class="collapse-item" href="<?= base_url('/sda/pikan'); ?>">Perikanan</a>
         <a class="collapse-item" href="<?= base_url('/sda/ptmbg'); ?>">Pertambangan</a>
         <a class="collapse-item" href="<?= base_url('/sda/lh'); ?>">Lingkungan Hidup</a>

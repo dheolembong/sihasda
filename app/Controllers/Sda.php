@@ -5,28 +5,8 @@ namespace App\Controllers;
 
 class Sda extends BaseController
 {
-  public function ptn()
-  {
-    $data = [
-      'title' => 'Data Pertanian | SIHASDA SULUT'
-    ];
-    echo view('layout/header', $data);
-    echo view('layout/sidebar');
-    echo view('layout/topbar');
-    echo view('sda/pertanian');
-    echo view('layout/footer');
-  }
-  public function ptkn()
-  {
-    $data = [
-      'title' => 'Data Peternakan | SIHASDA SULUT'
-    ];
-    echo view('layout/header', $data);
-    echo view('layout/sidebar');
-    echo view('layout/topbar');
-    echo view('sda/peternakan');
-    echo view('layout/footer');
-  }
+
+
   public function kltn()
   {
     $data = [
